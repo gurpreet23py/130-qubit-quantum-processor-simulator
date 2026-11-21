@@ -2,4 +2,9 @@
 cd 130-qubit-quantum-processor-simulator
 python -m pip install -e .
 q130sim --experiment ghz --qubits 130 --shots 1024 --seed 42
-quantum_processor.py
+git clone https://github.com/gurpreet23py/130-qubit-quantum-processor-simulator.git
+cd 130-qubit-quantum-processor-simulator
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install qiskit qiskit-aer
